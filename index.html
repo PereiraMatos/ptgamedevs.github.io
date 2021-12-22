@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+      crossorigin="anonymous"
+    />
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+      crossorigin="anonymous"
+    ></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <title>PT Game Devs</title>
+  </head>
+  <body>
+    <header class="container-fluid sticky-top bg-dark">
+      <div class="row">
+        <div class="col-3"></div>
+      </div>
+    </header>
+    <!-- social menu-->
+    <div class="container">
+      <div class="social d-flex flex-row-reverse">
+        <i class="fa fa-facebook-official fa-lg"></i>
+        <i class="fa fa-instagram fa-lg"></i>
+        <i class="fa fa-twitter fa-lg"></i>
+        <i class="fa fa-linkedin-square fa-lg"></i>
+        <i class="fa fa-facebook"></i>
+      </div>
+    </div>
+    <!-- menu-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+      <div class="container">
+        <!--Logo-->
+        <a href="#" class="navbar-brand">
+          <img src="imagens\logo_devCamp.svg" alt="logo" />
+        </a>
+
+        <!--hamburger-->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!--menu-->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="galeria.html">Forum</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="servicos.html"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Services
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li>
+                  <a class="dropdown-item" href="servicos.html">Studios</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="sobrenos.html">About Us</a>
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="contactos.html">Contacts</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input
+              class="form-control me-3 mx-auto"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-primary" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Content-->
+    <section class="container-fluid">
+      <!-- Slider-->
+      <div class="row">
+        <div class="col-12 p-0">
+          <div
+            id="carouselExampleCaptions"
+            class="carousel slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+              ></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="./imagens/imagem-slide-1.jpg"
+                  class="d-block w-100"
+                  alt="slide-1"
+                />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Portugal Game Devs</h5>
+                  <p>
+                    Here you can learn more about the world of video games in
+                    Portugal.
+                  </p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="./imagens/imagem-slide-2.jpg"
+                  class="d-block w-100"
+                  alt="slide-2"
+                />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Explore the studios and jobs</h5>
+                  <p>
+                    The video game industry in Portugal is getting bigger and
+                    more competitive. Come and discover the studios and some of
+                    the openings.
+                  </p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="./imagens/imagem-slide-3.jpg"
+                  class="d-block w-100"
+                  alt="slide-3"
+                />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>A forum to explore</h5>
+                  <p>
+                    The forum serves the purpose of clarifying doubts about the
+                    video games industry.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- Intro-->
+      <div class="container destaques">
+        <div class="row intro">
+          <div class="col-5 intro-image">
+            <img src="imagens/imagem-intro.png" alt="imagem-intro" />
+          </div>
+          <div class="col-6 intro-text">
+            <h2>Want to know about the video gaming world in Portugal?</h2>
+            <p>
+              Here you will discover the main news, articles and training
+              content about the <strong>gaming industry in Portugal.</strong> On
+              this site you can also participate in a forum where you can expose
+              your questions and receive feedback from our community.
+            </p>
+          </div>
+        </div>
+
+        <div class="row conteudo">
+          <div class="col-12">
+            <h1>Explore</h1>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-4 col-sm-6">
+            <div class="destaques-item">
+              <i class="bi bi-controller"></i>
+              <h3>List of Studios</h3>
+              <span
+                >Come and discover the studios developing video games with a
+                Portuguese signature!</span
+              >
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6">
+            <div class="destaques-item">
+              <i class="bi bi-person-workspace"></i>
+              <h3>Opportunities</h3>
+              <span
+                >Explore the many job opportunities in the video game industry
+                in Portugal</span
+              >
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6">
+            <div class="destaques-item">
+              <i class="bi bi-envelope-check"></i>
+              <h3>Get in Contact</h3>
+              <span
+                >You can contact the various studios involved in the video game
+                industrie via our form.
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container noticias">
+        <div class="row conteudo">
+          <div class="col-12">
+            <h1>Notícias</h1>
+          </div>
+        </div>
+        <div class="row artigos">
+          <article class="col-md-4 col-sm-6">
+            <div class="artigos-item">
+              <a
+                href="https://www.magazine-hd.com/apps/wp/portugal-jogos-mobile-casino/"
+              >
+                <img src="./imagens/imagem-noticia-1.jpg" class="img-fluid" />
+              </a>
+              <h5>
+                From Portugal to the world: The growth of the mobile games
+                industry in Portugal
+              </h5>
+              <span
+                >The mobile gaming industry is one of the fastest growing
+                sectors globally, having appreciated more than 800% since
+                2010.</span
+              >
+            </div>
+          </article>
+          <article class="col-md-4 col-sm-6">
+            <div class="artigos-item">
+              <a
+                href="https://www.magazine-hd.com/apps/wp/portugal-jogos-mobile-casino/"
+              >
+                <img src="./imagens/imagem-noticia-2.jpg" class="img-fluid" />
+              </a>
+              <h5>
+                The evolution of the gaming industry in Portugal in the year
+                2021
+              </h5>
+              <span
+                >The gaming industry is one of the sectors that has benefited
+                most from the digital era, with the latter enabling real
+                revolutions from the emergence of more traditional games to the
+                creation of new ones.</span
+              >
+            </div>
+          </article>
+          <article class="col-md-4 col-sm-6">
+            <div class="artigos-item">
+              <a
+                href="https://www.magazine-hd.com/apps/wp/portugal-jogos-mobile-casino/"
+              >
+                <img src="./imagens/imagem-noticia-3.jpg" class="img-fluid" />
+              </a>
+              <h5>
+                The biggest Game Dev event in Portugal is back for the 8th time
+              </h5>
+              <span
+                >Game Dev Camp brings a day full of talks on trends practices
+                and industry development, as well as virtual booths and
+                networking and networking opportunities and much more.</span
+              >
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+    <!--footer-->
+    <footer>
+      <div class="container-fluid bg-dark">
+        <div class="mx-5 caixa">
+          <div class="row mb-4">
+            <div class="col-md-4 col-sm-11 col-xs-11">
+              <div class="footer-text pull-left">
+                <div class="d-flex">
+                  <h1
+                    class="font-weight-bold mr-2 px-3"
+                    style="color: #16151a; background-color: #957bda"
+                  >
+                    Game
+                  </h1>
+                  <h1 style="color: #957bda">Devs</h1>
+                </div>
+                <p class="cartao-text">
+                  Find out the main news, articles and information about the
+                  gaming industry in Portugal.
+                </p>
+                <div class="social mt-2 mb-3">
+                  <i class="fa fa-facebook-official fa-lg"></i>
+                  <i class="fa fa-instagram fa-lg"></i>
+                  <i class="fa fa-twitter fa-lg"></i>
+                  <i class="fa fa-linkedin-square fa-lg"></i>
+                  <i class="fa fa-facebook"></i>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-2 col-sm-1 col-xs-1 mb-2"></div>
+            <div class="col-md-2 col-sm-4 col-xs-4 d-none d-sm-block">
+              <h5 class="heading">Information</h5>
+              <ul>
+                <li>Link 1</li>
+                <li>Link 1</li>
+                <li>Link 1</li>
+                <li>Link 1</li>
+              </ul>
+            </div>
+            <div class="col-md-2 col-sm-4 col-xs-2 d-none d-sm-block">
+              <h5 class="heading">IndieDevs</h5>
+              <ul class="cartao-text">
+                <li>Indie 1</li>
+                <li>Indie 2</li>
+                <li>Indie 3</li>
+                <li>Indie 4</li>
+              </ul>
+            </div>
+            <div class="col-md-2 col-sm-4 col-xs-4 d-none d-sm-block">
+              <h5 class="heading">GameDevs</h5>
+              <ul class="cartao-text">
+                <li>Home</li>
+                <li>Forum</li>
+                <li>Studios</li>
+                <li>Contacts</li>
+              </ul>
+            </div>
+          </div>
+          <div class="divider mb-4"></div>
+          <div class="row" style="font-size: 10px">
+            <div class="col-md-6 col-sm-6 col-xs-6">
+              <div class="pull-left copy">
+                <p><i class="fa fa-copyright"></i> 2021 André Matos</p>
+              </div>
+            </div>
+            <div class="col-md-6 col-sm-6 col-xs-6">
+              <div class="pull-right mr-4 d-flex policy">
+                <div>Termos de Utilização</div>
+                <div>Políticas de Privacidade</div>
+                <div>Cookie Policy</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div id="progress-bar"></div>
+    <script src="js/app.js"></script>
+  </body>
+</html>

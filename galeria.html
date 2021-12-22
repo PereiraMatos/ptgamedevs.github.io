@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+      crossorigin="anonymous"
+    />
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+      crossorigin="anonymous"
+    ></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <title>PT Game Devs</title>
+  </head>
+  <body>
+    <header class="container-fluid sticky-top bg-dark">
+      <div class="row">
+        <div class="col-3"></div>
+      </div>
+    </header>
+    <!-- social menu-->
+    <div class="container">
+      <div class="social d-flex flex-row-reverse">
+        <i class="fa fa-facebook-official fa-lg"></i>
+        <i class="fa fa-instagram fa-lg"></i>
+        <i class="fa fa-twitter fa-lg"></i>
+        <i class="fa fa-linkedin-square fa-lg"></i>
+        <i class="fa fa-facebook"></i>
+      </div>
+    </div>
+    <!-- menu-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+      <div class="container">
+        <!--Logo-->
+        <a href="#" class="navbar-brand">
+          <img src="imagens\logo_devCamp.svg" alt="logo" />
+        </a>
+
+        <!--hamburger-->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!--menu-->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="galeria.html">Forum</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="servicos.html"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Services
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li>
+                  <a class="dropdown-item" href="servicos.html">Studios</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="sobrenos.html">About Us</a>
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="contactos.html">Contacts</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input
+              class="form-control me-3 mx-auto"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-primary" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <!--Cover-->
+    <div class="container-fluid p-0">
+      <div class="hero-image">
+        <div class="hero-text">
+          <h1 id="header-text">Forum</h1>
+          <p>
+            Here you can learn more about the world of video games in Portugal.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <section class="container conteudo">
+      <div class="row galeria">
+        <div class="col-lg-12">
+          <div class="row d-flex justify-content-between align-items-center">
+            <div class="col-lg-3 col-md-3">
+              <div class="section-tittle mb-30">
+                <h3>Open <span>Discussions</span></h3>
+              </div>
+            </div>
+            <div class="col-lg-9 col-md-9">
+              <div class="properties__button">
+                <!--Nav Button  -->
+                <nav>
+                  <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                    <a
+                      class="nav-item nav-link active"
+                      id="nav-home-tab"
+                      data-toggle="tab"
+                      href="#nav-home"
+                      role="tab"
+                      aria-controls="nav-home"
+                      aria-selected="true"
+                      >Trends</a
+                    >
+                    <a
+                      class="nav-item nav-link"
+                      id="nav-hw-tab"
+                      data-toggle="tab"
+                      href="#nav-hw"
+                      role="tab"
+                      aria-controls="nav-hw"
+                      aria-selected="false"
+                      >Hardware</a
+                    >
+                    <a
+                      class="nav-item nav-link"
+                      id="nav-launch-tab"
+                      data-toggle="tab"
+                      href="#nav-launch"
+                      role="tab"
+                      aria-controls="nav-launch"
+                      aria-selected="false"
+                      >Launchs</a
+                    >
+                    <a
+                      class="nav-item nav-link"
+                      id="nav-event-tab"
+                      data-toggle="tab"
+                      href="#nav-event"
+                      role="tab"
+                      aria-controls="nav-event"
+                      aria-selected="false"
+                      >Events</a
+                    >
+                    <a
+                      class="nav-item nav-link"
+                      id="nav-game-tab"
+                      data-toggle="tab"
+                      href="#nav-game"
+                      role="tab"
+                      aria-controls="nav-game"
+                      aria-selected="false"
+                      >Games</a
+                    >
+                    <a
+                      class="nav-item nav-link"
+                      id="nav-social-tab"
+                      data-toggle="tab"
+                      href="#nav-social"
+                      role="tab"
+                      aria-controls="nav-social"
+                      aria-selected="false"
+                      >Social</a
+                    >
+                    <a
+                      class="nav-item nav-link"
+                      id="nav-easport-tab"
+                      data-toggle="tab"
+                      href="#nav-easport"
+                      role="tab"
+                      aria-controls="nav-easport"
+                      aria-selected="false"
+                      >EA Sports</a
+                    >
+                  </div>
+                </nav>
+                <!--End Nav Button  -->
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--   forum 1 -->
+        <div class="col-md-3 col-sm-6 galeria-item">
+          <div>
+            <a
+              href="./imagens/foto01.jpg"
+              data-fancybox="forum"
+              target="_blank"
+            >
+              <img src="./imagens/foto01.jpg" class="img-fluid" />
+            </a>
+            <h5>New components! 2022</h5>
+          </div>
+        </div>
+        <!--   forum 2 -->
+        <div class="col-md-3 col-sm-6 galeria-item">
+          <div>
+            <a
+              href="./imagens/foto02.jpg"
+              data-fancybox="forum"
+              target="_blank"
+            >
+              <img src="./imagens/foto02.jpg" class="img-fluid" />
+            </a>
+            <h5>Out of Line is out!</h5>
+          </div>
+        </div>
+        <!--   forum 3 -->
+        <div class="col-md-3 col-sm-6 galeria-item">
+          <div>
+            <a
+              href="./imagens/foto03.jpg"
+              data-fancybox="forum"
+              target="_blank"
+            >
+              <img src="./imagens/foto03.jpg" class="img-fluid" />
+            </a>
+            <h5>New Podcast: FunPunch</h5>
+          </div>
+        </div>
+        <!--   forum 4 -->
+        <div class="col-md-3 col-sm-6 galeria-item">
+          <div>
+            <a
+              href="./imagens/foto04.jpg"
+              data-fancybox="forum"
+              target="_blank"
+            >
+              <img src="./imagens/foto04.jpg" class="img-fluid" />
+            </a>
+            <h5>Games for Christmas!</h5>
+          </div>
+        </div>
+        <!--   forum 5 -->
+        <div class="col-md-3 col-sm-6 galeria-item">
+          <div>
+            <a
+              href="./imagens/foto05.jpg"
+              data-fancybox="forum"
+              target="_blank"
+            >
+              <img src="./imagens/foto05.jpg" class="img-fluid" />
+            </a>
+            <h5>Games coming 2022</h5>
+          </div>
+        </div>
+        <!--   forum 6 -->
+        <div class="col-md-3 col-sm-6 galeria-item">
+          <div>
+            <a
+              href="./imagens/foto06.jpg"
+              data-fancybox="forum"
+              target="_blank"
+            >
+              <img src="./imagens/foto06.jpg" class="img-fluid" />
+            </a>
+            <h5>Board Games for 2022</h5>
+          </div>
+        </div>
+        <!--   forum 7 -->
+        <div class="col-md-3 col-sm-6 galeria-item">
+          <div>
+            <a
+              href="./imagens/foto07.jpg"
+              data-fancybox="forum"
+              target="_blank"
+            >
+              <img src="./imagens/foto07.jpg" class="img-fluid" />
+            </a>
+            <h5>New plugins: Unity</h5>
+          </div>
+        </div>
+        <!--   forum 8 -->
+        <div class="col-md-3 col-sm-6 galeria-item">
+          <div>
+            <a
+              href="./imagens/foto08.jpg"
+              data-fancybox="forum"
+              target="_blank"
+            >
+              <img src="./imagens/foto08.jpg" class="img-fluid" />
+            </a>
+            <h5>Christmas Tournament</h5>
+          </div>
+        </div>
+        <!--   forum 9 -->
+        <div class="col-md-3 col-sm-6 galeria-item">
+          <div>
+            <a
+              href="./imagens/foto09.jpg"
+              data-fancybox="forum"
+              target="_blank"
+            >
+              <img src="./imagens/foto09.jpg" class="img-fluid" />
+            </a>
+            <h5>Twitch: TOP 2021</h5>
+          </div>
+        </div>
+        <!--   forum 10 -->
+        <div class="col-md-3 col-sm-6 galeria-item">
+          <div>
+            <a
+              href="./imagens/foto10.jpg"
+              data-fancybox="forum"
+              target="_blank"
+            >
+              <img src="./imagens/foto10.jpg" class="img-fluid" />
+            </a>
+            <h5>Oculus Quest 3?</h5>
+          </div>
+        </div>
+        <!--   forum 11 -->
+        <div class="col-md-3 col-sm-6 galeria-item">
+          <div>
+            <a
+              href="./imagens/foto11.jpg"
+              data-fancybox="forum"
+              target="_blank"
+            >
+              <img src="./imagens/foto11.jpg" class="img-fluid" />
+            </a>
+            <h5>Game Engines: 2022</h5>
+          </div>
+        </div>
+        <!--   forum 12 -->
+        <div class="col-md-3 col-sm-6 galeria-item">
+          <div>
+            <a
+              href="./imagens/foto12.jpg"
+              data-fancybox="forum"
+              target="_blank"
+            >
+              <img src="./imagens/foto12.jpg" class="img-fluid" />
+            </a>
+            <h5>Game Engines: Trends</h5>
+          </div>
+        </div>
+        <!--   Tutorials -->
+      </div>
+      <div class="row conteudo">
+        <div class="col-12">
+          <h1>Podcast</h1>
+        </div>
+      </div>
+
+      <div class="row galeria">
+        <div class="col-4 galeria-item">
+          <div>
+            <a
+              href="https://www.youtube.com/watch?v=WXi3XmMuk5g"
+              data-fancybox="video"
+              target="_blank"
+            >
+              <img
+                src="https://img.youtube.com/vi/WXi3XmMuk5g/0.jpg"
+                class="img-fluid"
+              />
+            </a>
+            <h5>Podcast #1</h5>
+          </div>
+        </div>
+        <div class="col-4 galeria-item">
+          <div>
+            <a
+              href="https://www.youtube.com/watch?v=EH3GTl0B-oo"
+              data-fancybox="video"
+              target="_blank"
+            >
+              <img
+                src="https://img.youtube.com/vi/EH3GTl0B-oo/0.jpg"
+                class="img-fluid"
+              />
+            </a>
+            <h5>Podcast #2</h5>
+          </div>
+        </div>
+        <div class="col-4 galeria-item">
+          <div>
+            <a
+              href="https://www.youtube.com/watch?v=pi_kuD4k3Sg"
+              data-fancybox="video"
+              target="_blank"
+            >
+              <img
+                src="https://img.youtube.com/vi/pi_kuD4k3Sg/0.jpg"
+                class="img-fluid"
+              />
+            </a>
+            <h5>Podcast #3</h5>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container-fluid bg-dark">
+        <div class="mx-5 caixa">
+          <div class="row mb-4">
+            <div class="col-md-4 col-sm-11 col-xs-11">
+              <div class="footer-text pull-left">
+                <div class="d-flex">
+                  <h1
+                    class="font-weight-bold mr-2 px-3"
+                    style="color: #16151a; background-color: #957bda"
+                  >
+                    Game
+                  </h1>
+                  <h1 style="color: #957bda">Devs</h1>
+                </div>
+                <p class="cartao-text">
+                  Find out the main news, articles and information about the
+                  gaming industry in Portugal.
+                </p>
+                <div class="social mt-2 mb-3">
+                  <i class="fa fa-facebook-official fa-lg"></i>
+                  <i class="fa fa-instagram fa-lg"></i>
+                  <i class="fa fa-twitter fa-lg"></i>
+                  <i class="fa fa-linkedin-square fa-lg"></i>
+                  <i class="fa fa-facebook"></i>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-2 col-sm-1 col-xs-1 mb-2"></div>
+            <div class="col-md-2 col-sm-4 col-xs-4 d-none d-sm-block">
+              <h5 class="heading">Information</h5>
+              <ul>
+                <li>Link 1</li>
+                <li>Link 1</li>
+                <li>Link 1</li>
+                <li>Link 1</li>
+              </ul>
+            </div>
+            <div class="col-md-2 col-sm-4 col-xs-2 d-none d-sm-block">
+              <h5 class="heading">IndieDevs</h5>
+              <ul class="cartao-text">
+                <li>Indie 1</li>
+                <li>Indie 2</li>
+                <li>Indie 3</li>
+                <li>Indie 4</li>
+              </ul>
+            </div>
+            <div class="col-md-2 col-sm-4 col-xs-4 d-none d-sm-block">
+              <h5 class="heading">GameDevs</h5>
+              <ul class="cartao-text">
+                <li>Home</li>
+                <li>Forum</li>
+                <li>Studios</li>
+                <li>Contacts</li>
+              </ul>
+            </div>
+          </div>
+          <div class="divider mb-4"></div>
+          <div class="row" style="font-size: 10px">
+            <div class="col-md-6 col-sm-6 col-xs-6">
+              <div class="pull-left copy">
+                <p><i class="fa fa-copyright"></i> 2021 André Matos</p>
+              </div>
+            </div>
+            <div class="col-md-6 col-sm-6 col-xs-6">
+              <div class="pull-right mr-4 d-flex policy">
+                <div>Termos de Utilização</div>
+                <div>Políticas de Privacidade</div>
+                <div>Cookie Policy</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- All JS Custom Plugins Link Here here -->
+    <script src="../js/vendor/modernizr-3.5.0.min.js"></script>
+    <!-- Jquery Plugins, main Jquery -->
+    <script src="../js/plugins.js"></script>
+    <script src="../js/main.js"></script>
+  </body>
+</html>
