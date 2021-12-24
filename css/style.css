@@ -102,7 +102,7 @@ li.dropdown {
   max-width: 52rem;
 }
 
-@media only screen and (min-width: 960px) {
+@media screen and (min-width: 960px) {
   .navbar {
     padding-top: 0;
     padding-bottom: 0;
@@ -111,7 +111,7 @@ li.dropdown {
 .navbar .nav-item {
   padding: 0.5em;
 }
-@media only screen and (max-width: 960px) {
+@media screen and (max-width: 960px) {
   .navbar .navbar-nav {
     margin-top: 0.5em;
   }
@@ -138,7 +138,7 @@ li.dropdown {
   transition: width 0.2s ease-out;
 }
 
-@media only screen and (max-width: 1000px) {
+@media screen and (max-width: 1000px) {
   #progress-bar {
     top: 3.9rem;
   }
@@ -159,7 +159,7 @@ li.dropdown {
 }
 
 .carousel-caption h5 {
-  font-size: 62px;
+  font-size: 5vw;
   font-weight: bold;
   letter-spacing: 0.02em;
   color: white;
@@ -173,6 +173,16 @@ li.dropdown {
   color: rgb(214, 214, 214);
   padding: 3% 14% 7% 14%;
   text-shadow: 1px 1px 8px #0b082d;
+}
+
+@media screen and (max-width: 700px) {
+  .carousel-caption h5 {
+    font-size: 22px;
+  }
+
+  .carousel-caption p {
+    font-size: 14px;
+  }
 }
 
 /*cover*/
@@ -211,6 +221,21 @@ li.dropdown {
   text-shadow: 2px 2px 4px #0b082d;
 }
 
+@media screen and (max-width: 800px) {
+  .hero-text {
+    width: 80%;
+  }
+  .hero-text h1 {
+    font-size: 3rem;
+    font-weight: 700;
+  }
+
+  .hero-text p {
+    font-weight: 500;
+    font-size: 1.4rem;
+  }
+}
+
 /*intro-sobre*/
 
 .intro {
@@ -223,18 +248,44 @@ li.dropdown {
 }
 
 .intro-text h2 {
-  font-size: 3.2vw;
-  font-weight: bolder;
+  font-size: 3.4vw;
+  font-weight: 800;
   padding-bottom: 1rem;
 }
 
 .intro-text p {
-  font-size: 115%;
-  font-weight: normal;
+  font-size: 120%;
+  font-weight: 600;
 }
 
 .intro img {
   width: 26vw;
+}
+
+@media screen and (max-width: 800px) {
+  .intro-text {
+    justify-content: center;
+    margin-left: 3rem;
+    width: 80% !important;
+  }
+
+  .intro-text h2 {
+    font-size: 2.2rem;
+    font-weight: 800;
+  }
+
+  .intro-text p {
+    font-size: 1.4rem;
+    font-weight: 600;
+  }
+
+  .intro img {
+    position: absolute;
+    margin-left: 20vw;
+    width: 20rem;
+    height: auto;
+    opacity: 0.2;
+  }
 }
 
 /*body*/
@@ -243,7 +294,7 @@ li.dropdown {
   margin-bottom: 18rem;
 }
 
-@media only screen and (max-width: 800px) {
+@media screen and (max-width: 800px) {
   .destaques {
     margin-bottom: 10rem;
   }
@@ -267,7 +318,7 @@ li.dropdown {
   filter: grayscale(0);
 }
 
-@media only screen and (max-width: 700px) {
+@media screen and (max-width: 700px) {
   .destaques-item {
     padding-bottom: 2rem;
     margin: 1rem;
@@ -284,7 +335,7 @@ li.dropdown {
 
 /*lista Estúdios*/
 
-@media only screen and (max-width: 800px) {
+@media screen and (max-width: 800px) {
   .destaques {
     margin-bottom: 10rem;
   }
@@ -384,13 +435,16 @@ li.dropdown {
   font-weight: 700;
 }
 
-@media only screen and (max-width: 1000px) {
+@media screen and (max-width: 1000px) {
   .section-tittle h3 span {
     margin: 0.5rem;
     font-size: 28px;
     font-weight: 700;
   }
 }
+
+/*nav*/
+
 .nav-tabs .nav-link {
   border: 0;
   border-bottom: 2px solid transparent !important;
@@ -485,6 +539,13 @@ li.dropdown {
   transition: 0.3s;
 }
 
+@media screen and (max-width: 800px) {
+  .galeria-item h5 {
+    font-weight: 600;
+    margin-top: 16px;
+    font-size: 20px;
+  }
+}
 /*Tutorials*/
 
 /*estudios*/
@@ -533,6 +594,28 @@ li.dropdown {
   font-weight: 500;
   text-align: justify;
   text-justify: inter-word;
+}
+
+@media screen and (max-width: 800px) {
+  .missao {
+    width: 80% !important;
+    padding-top: 6rem;
+    padding-bottom: 14rem;
+  }
+
+  .missao-text p {
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+
+  .missao-image img {
+    bottom: 6rem;
+    position: absolute;
+    margin-left: 32vw;
+    width: 15rem;
+    height: auto;
+    opacity: 0.25;
+  }
 }
 
 /*contactos*/
@@ -593,14 +676,29 @@ li.dropdown {
   border: 2px solid #957bda;
 }
 
-@media only screen and (max-width: 1000px) {
+@media screen and (max-width: 1000px) {
   .contactos {
     flex: auto;
     flex-direction: column;
-    width: 130%;
+    width: 150%;
     padding-left: 30%;
     gap: 3rem;
   }
+
+  .morada h4 {
+    font-size: 20px;
+    padding-bottom: 1rem;
+  }
+
+  .morada p {
+    font-size: 17px;
+  }
+
+  .formulario label {
+    font-size: 18px;
+    font-weight: 600;
+  }
+
   .mapa-base {
     position: relative;
     margin-left: 6rem;
